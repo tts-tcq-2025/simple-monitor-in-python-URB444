@@ -1,6 +1,7 @@
-def check_limits(val, low_limit, high_limit):
+def check_limits(val, low_limit, high_limit,name):
     if val < low_limit or val > high_limit:
         return False
+        print(f'{name} is out of range')
     return True
 
 def battery_is_ok(temperature, soc, charge_rate):
